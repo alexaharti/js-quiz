@@ -27,13 +27,7 @@ label {
 .button {
   margin-top: 20px;
 }
-In this CSS code, we apply some styling to center the elements on the page and arrange the answer variants in a column. The display: flex and justify-content: center properties are used to center the content within the .body class. The .quiz-container class ensures that the quiz elements are centered using text-align: center.
 
-The .flexbox class is used to display the form elements in a column using flex-direction: column and align them at the center with align-items: center. The #question ID selects the <p> element with the question and adds a bottom margin to create some spacing.
-
-The label element is set to display: block to make each answer variant appear on a new line. Lastly, the .button class adds a top margin to the submit button for spacing.
-
-Make sure to link this CSS file in the <head> section of your HTML code by adding <link rel="stylesheet" href="style.css"> below the <title> tag.
 
 
 
