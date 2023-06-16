@@ -9,30 +9,38 @@
     <script src="index.js"></script>
   </head>
   <body class="body">
-    <div class="quiz-container">
-      <h1>Quiz</h1>
-      <div class="flexbox">
-        <h4>Care este capitala Romaniei?</h4>
-      <form id="quiz-form">
-        <p id="question"></p>
-        <label>
-          <input type="radio" name="q1"><span>Chisinau</span>
-        </label>
-        <label>
-          <input type="radio" name="q1"><span>Bucuresti</span>
-        </label>
-        <label>
-          <input type="radio" name="q1"><span>Cluj</span>
-        </label>
-        <label>
-          <input type="radio" name="q1"><span>Sibiu</span>
-        </label>
-        <label>
-          <input type="radio" name="q1"><span>Iasi</span>
-        </label>
-          <button type="submit" class="button">Submit</button>
-      </form>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question text</h2>
+      
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">answer</label>
+        </li>
+      </ul>
     </div>
+
+    <button id="submit">Submit</button>
+
     </div>
+
+    <script src="index.js"></script>
+
   </body>
 </html>

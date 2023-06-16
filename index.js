@@ -1,29 +1,126 @@
-const data = {
+const data = [
+
+  {
   question: "Care este capitala Romaniei?",
-  answers: [
-    "Chisnau",
-    "Bucuresti",
-    "Cluj",
-    "Sibiu",
-    "Iasi"
-  ]
-};
+  a: "Chisnau",
+  b: "Bucuresti",
+  c: "Cluj",
+  d:  "Sibiu",
+  correct: "b"
+},
 
-const question = document.getElementsById("question")
-question.innerText = data.question;
+  {
+  question: "Ce reprezinta Ag in tabelul periodic?",
+  a: "aur",
+  b:  "argint",
+  c:  "cupru",
+  d:  "oxigen",
+  correct: "b"
+},
 
-const app = document.getElementById("app");
+  {question: "Cate zile sunt intr-o saptamana?",
+  answer1: "4",
+  answer2:  "5",
+  answer3:  "6",
+  answer4:  "7",
+},
 
-const answers = app.getElementsByTagName('span');
+  {
+  question: "Care este capitala Moldovei?",
+  a: "Chisnau",
+  b: "Bucuresti",
+  c: "Cluj",
+  d:  "Sibiu",
+  correct: "a"
+},
 
-answers[0].innerText = "Chisinau"
-answers[1].innerText = "Bucuresti"
-answers[2].innerText = "Cluj"
-answers[3].innerText = "Sibiu"
-answers[4].innerText = "Iasi"
+  {
+  question: "Ce reprezinta Cl in tabelul periodic?",
+  a: "aur",
+  b:  "argint",
+  c:  "cupru",
+  d:  "oxigen",
+  correct: "b"
+},
 
-let n_answ = 5;
+]
+const quiz = document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
 
-for (let i=0; i<=4; i++) {
-  answers[i].innerText = data.answers[i];
+const questionEl = document.getElementById('question')
+//question.innerText = data.question;
+
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+
+const submitBtn = document.getElementById('submit')
+
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+  deselectAnswers()
+   
+  const currentQuizData = data[currentQuiz]
+
+  questionEl.innerText = currentQuizData.question
+  a_text.innerText = currentQuizData.a
+  b_text.innerText = currentQuizData.b
+  c_text.innerText = currentQuizData.c
+  d_text.innerText = currentQuizData.d
 }
+
+function deselectAnswers()
+{
+  answerEls.forEach(answerEls => answerEls.checked = false)
+}
+
+function getSelected()
+{
+  let answerEls
+  answerEls.forEach(answerEls => {
+    if(answerEls.checked) {
+      answer = answerEls.id
+    }
+  })
+   return answer
+}
+
+submtBtn.addEventListener('click', () => {
+  const answer = getSelected()
+  if(answer) {
+    if(answer === data[currentQuiz].correct) {
+      score++
+    }
+
+    currentQuiz++
+
+    if(currentQuiz < data.length) {
+      loadQuiz()
+    } else 
+       {
+       quiz.innerHTML =
+    <><h2>Ai raspuns ${score}/{data.length} intrebari corect</h2><button onclick="location.reload()">Reload</button></>
+  }
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+ 
