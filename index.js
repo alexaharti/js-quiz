@@ -1,5 +1,4 @@
 const data = [
-
   {
   question: "Care este capitala Romaniei?",
   a: "Chisnau",
@@ -19,10 +18,10 @@ const data = [
 },
 
   {question: "Cate zile sunt intr-o saptamana?",
-  answer1: "4",
-  answer2:  "5",
-  answer3:  "6",
-  answer4:  "7",
+  a: "4",
+  b:  "5",
+  c:  "6",
+  d:  "7",
 },
 
   {
@@ -48,7 +47,6 @@ const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 
 const questionEl = document.getElementById('question')
-//question.innerText = data.question;
 
 const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
@@ -79,21 +77,21 @@ function loadQuiz() {
 
 function deselectAnswers()
 {
-  answerEls.forEach(answerEls => answerEls.checked = false)
+  answerEls.forEach(answer => answer.checked = false)
 }
 
 function getSelected()
 {
-  let answerEls
-  answerEls.forEach(answerEls => {
-    if(answerEls.checked) {
-      answer = answerEls.id
+  let result;
+  answerEls.forEach(answer => {
+    if(answer.checked) {
+      result = answer.id
     }
   })
-   return answer
+   return result
 }
 
-submtBtn.addEventListener('click', () => {
+document.getElementById("submit").addEventListener('click', () => {
   const answer = getSelected()
   if(answer) {
     if(answer === data[currentQuiz].correct) {
@@ -107,7 +105,7 @@ submtBtn.addEventListener('click', () => {
     } else 
        {
        quiz.innerHTML =
-    <><h2>Ai raspuns ${score}/{data.length} intrebari corect</h2><button onclick="location.reload()">Reload</button></>
+    `<><h2>Ai raspuns ${score}/{data.length} intrebari corect</h2><button onclick="location.reload()">Reload</button></>`
   }
   }
 })
