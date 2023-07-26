@@ -18,5 +18,5 @@ This General Knowledge Quiz is a web application that was built using HTML, CSS,
 
 after pressing Enter, the project should appear succesfully in the chosen file from where you can acces it in VS Code.
 - once you've opened it in VS code, click right on 'index.html' and press 'Reveal in File Explorer'
-
+- in case you do not use VS Code, after dowloading the repository in your folder open the index file.
 Enjoy the Quiz!
