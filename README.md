@@ -9,7 +9,7 @@ This General Knowledge Quiz is a web application that was built using HTML, CSS,
 - index.js : It is responsible for the interactivity and dynamic functionality of the website.
 - style.css : It helps define the appearance and layout of a website's elements. It works in conjunction with the HTML structure of the webpage to apply visual styles.
 
-## Installing
+## Installing and Usage
 
 - press the green 'Code' button on the top right of the repository
 - copy the link of the repository
