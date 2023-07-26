@@ -13,10 +13,13 @@ This General Knowledge Quiz is a web application that was built using HTML, CSS,
 
 - press the green 'Code' button on the top right of the repository
 - copy the link of the repository
-- choose a file on your computer and click right then press 'Git Bash Here' (the git terminal will open)
+- choose a folder on your computer(where you would like to download the repository) and click right then press 'Git Bash Here' (the git terminal will open)
 - type 'git clone' and paste the link of the repository in the terminal 
 
 after pressing Enter, the project should appear succesfully in the chosen file from where you can acces it in VS Code.
 - once you've opened it in VS code, click right on 'index.html' and press 'Reveal in File Explorer'
-- in case you do not use VS Code, after dowloading the repository in your folder open the index file.
+- if you do not use VS Code, after dowloading the repository in your folder open the index file.
+
+In case you have not installed Git yet, follow the instructions from this link https://phoenixnap.com/kb/how-to-install-git-windows
+
 Enjoy the Quiz!
