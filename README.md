@@ -4,6 +4,11 @@
 
 This General Knowledge Quiz is a web application that was built using HTML, CSS, and  JavaScript. Users can test themselves by answering the five questions that are shown consecutively. All they have to do is choose the correct answer and press 'Submit'. At the end of the Quiz, the application calculates and displays the user's score and by pressing 'Reload' the participant can retake the quiz.
 
+## Contents
+- index.html :  It is a text-based document that contains the structure and content of a web page. The HTML file provides instructions to the web browser on how to  display the web page to the visitors.
+- index.js : It is responsible for the interactivity and dynamic functionality of the website.
+- style.css :
+
 ## Installing
 
 - press the green 'Code' button on the top right of the repository
