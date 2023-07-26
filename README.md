@@ -7,7 +7,7 @@ This General Knowledge Quiz is a web application that was built using HTML, CSS,
 ## Contents
 - index.html :  It is a text-based document that contains the structure and content of a web page. The HTML file provides instructions to the web browser on how to  display the web page to the visitors.
 - index.js : It is responsible for the interactivity and dynamic functionality of the website.
-- style.css :
+- style.css : It helps define the appearance and layout of a website's elements. It works in conjunction with the HTML structure of the webpage to apply visual styles.
 
 ## Installing
 
