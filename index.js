@@ -105,7 +105,7 @@ document.getElementById("submit").addEventListener('click', () => {
     } else 
        {
        quiz.innerHTML =
-    `<><h2>Ai raspuns ${score}/{data.length} intrebari corect</h2><button onclick="location.reload()">Reload</button></>`
+    `<><h2>Ai raspuns ${score}/${data.length} intrebari corect</h2><button onclick="location.reload()">Reload</button></>`
   }
   }
 })
